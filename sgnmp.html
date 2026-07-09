@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recipe Rush - Sign Up</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        .navbar {
+            color: white;
+            text-decoration: none;
+            background-color: #da813d;
+            padding: 10px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .signup-box:hover{
+            background-color: #da813d;
+        }
+        .signup-box {
+            width: 450px;
+            height: 350px;
+            background: white;
+            margin: 60px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 8px gray;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=password] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: darkgreen;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="navbar">
+    <h2>Recipe Rush</h2>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Service</a>
+        <a href="KitchenTips.html">Tips</a>
+        <a href="login.html">Login</a>
+    </div>
+</div>
+    <div class="signup-box">
+
+        <h2>Sign Up</h2>
+
+        <form action="signup.php" method="POST">
+
+            <input type="text" name="uname" placeholder="Username" required>
+
+            <input type="email" name="email" placeholder="Email Address" required>
+
+            <input type="password" name="pass" placeholder="Password" required>
+
+            <input type="submit" value="Sign Up">
+
+        </form>
+
+        <p>
+            Already have an account?
+            <a href="login.html">Login</a>
+        </p>
+
+    </div>
+
+</body>
+
+</html>

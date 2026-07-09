@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recipe Rush - Login</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        .navbar {
+            color: white;
+            text-decoration: none;
+            background-color: #da813d;
+            padding: 2px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .login-box:hover{
+            background-color: #da813d;
+        }
+        .login-box{
+            width: 450px;
+            height: 320px;
+            background: #ffffff;
+            margin: 60px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 8px gray;
+        }
+
+        h2 {
+            text-align: center;
+        }
+        input {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: darkgreen;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="navbar">
+    <h2 class="logo">Recipe Rush</h2>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Service</a>
+        <a href="KitchenTips.html">Tips</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+</div>
+    <div class="login-box">
+
+        <h2>Login</h2>
+
+        <form action="login.php" method="POST">
+
+            <input type="text" name="uname" placeholder="Enter your username">
+
+            <br>
+            <input type="password" name="pass" placeholder="Enter your password">
+
+            <input type="submit" value="Login">
+
+        </form>
+
+        <p>
+            Don't have an account?
+            <a href="signup.html">Sign Up</a>
+        </p>
+
+        <p>
+            <a href="logout.php">Logout</a>
+        </p>
+
+    </div>
+
+</body>
+
+</html>
